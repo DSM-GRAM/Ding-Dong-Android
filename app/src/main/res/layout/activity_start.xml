@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dsm2017.dingdong.StartActivity">
+
+    <ImageView
+        android:id="@+id/text_start_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/text_start_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ding Dong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_start_icon"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="25sp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/text_start_explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best way to help people"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_start_name"
+        app:layout_constraintVertical_bias="0.04"
+        android:textSize="12sp"
+        android:textColor="#a2a2a2"/>
+
+    <Button
+        android:id="@+id/btn_start_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_start_explanation"
+        app:layout_constraintVertical_bias="0.4"
+        android:background="@drawable/roundstyles_start_button"
+        android:text="로그인"
+        android:textColor="@drawable/change_color_start_text"/>
+    <Button
+        android:id="@+id/btn_start_signup"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_login"
+        android:background="@drawable/roundstyles_start_button"
+        app:layout_constraintVertical_bias="0.3"
+        android:text="회원가입"
+        android:textColor="@drawable/change_color_start_text"/>
+</android.support.constraint.ConstraintLayout>
