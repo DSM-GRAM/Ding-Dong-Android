@@ -45,9 +45,11 @@
 
     <EditText
         android:id="@+id/edit_signup_id"
-        android:layout_width="270dp"
+        android:layout_width="0dp"
         android:layout_height="30dp"
         android:background="@drawable/roundstyles_sign_up_edittext"
+        android:inputType="text"
+        android:paddingRight="10dp"
         android:textAlignment="viewEnd"
         android:textColor="#ff717c"
         android:textSize="12sp"
@@ -55,7 +57,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:maxLines="1"/>
+        app:layout_constraintWidth_percent="0.7" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,18 +72,20 @@
 
     <EditText
         android:id="@+id/edit_signup_password"
-        android:layout_width="270dp"
+        android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/roundstyles_sign_up_edittext"
         android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingRight="10dp"
         android:textAlignment="viewEnd"
         android:textColor="#ff717c"
         android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_signup_id"
-        android:maxLines="1"/>
+        app:layout_constraintWidth_percent="0.7" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -96,18 +100,20 @@
 
     <EditText
         android:id="@+id/edit_signup_pwcheck"
-        android:layout_width="270dp"
+        android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/roundstyles_sign_up_edittext"
         android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingRight="10dp"
         android:textAlignment="viewEnd"
         android:textColor="#ff717c"
         android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_signup_password"
-        android:maxLines="1"/>
+        app:layout_constraintWidth_percent="0.7" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -119,4 +125,90 @@
         app:layout_constraintBottom_toBottomOf="@id/edit_signup_pwcheck"
         app:layout_constraintLeft_toLeftOf="@id/edit_signup_pwcheck"
         app:layout_constraintTop_toTopOf="@id/edit_signup_pwcheck" />
+
+    <EditText
+        android:id="@+id/edit_signup_cycle"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundstyles_sign_up_edittext"
+        android:hint="28"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingRight="30dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#ff717c"
+        android:textColorHint="#ff717c"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/edit_signup_pwcheck"
+        app:layout_constraintTop_toBottomOf="@id/edit_signup_pwcheck"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="월경 주기"
+        android:textColor="#5c000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_signup_cycle"
+        app:layout_constraintLeft_toLeftOf="@id/edit_signup_cycle"
+        app:layout_constraintTop_toTopOf="@id/edit_signup_cycle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="일"
+        app:layout_constraintRight_toRightOf="@+id/edit_signup_cycle"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_signup_cycle"
+        app:layout_constraintTop_toTopOf="@+id/edit_signup_cycle"/>
+
+    <EditText
+        android:id="@+id/edit_signup_period"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundstyles_sign_up_edittext"
+        android:hint="7"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingRight="30dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#ff717c"
+        android:textColorHint="#ff717c"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="@id/edit_signup_pwcheck"
+        app:layout_constraintTop_toBottomOf="@id/edit_signup_pwcheck"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="월경 기간"
+        android:textColor="#5c000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_signup_period"
+        app:layout_constraintLeft_toLeftOf="@id/edit_signup_period"
+        app:layout_constraintTop_toTopOf="@id/edit_signup_period" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="일"
+        app:layout_constraintRight_toRightOf="@+id/edit_signup_period"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_signup_cycle"
+        app:layout_constraintTop_toTopOf="@+id/edit_signup_cycle"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff717c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="다음"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+
 </android.support.constraint.ConstraintLayout>
