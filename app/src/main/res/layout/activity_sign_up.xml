@@ -8,7 +8,7 @@
 
     <View
         android:id="@+id/circle"
-        android:layout_width="420dp"
+        android:layout_width="450dp"
         android:layout_height="160dp"
         android:background="@drawable/circle_sign_up_background"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -51,7 +51,7 @@
         android:inputType="text"
         android:paddingRight="10dp"
         android:textAlignment="viewEnd"
-        android:textColor="#ff717c"
+        android:textColor="@color/colorPrimary"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -80,7 +80,7 @@
         android:maxLines="1"
         android:paddingRight="10dp"
         android:textAlignment="viewEnd"
-        android:textColor="#ff717c"
+        android:textColor="@color/colorPrimary"
         android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -108,7 +108,7 @@
         android:maxLines="1"
         android:paddingRight="10dp"
         android:textAlignment="viewEnd"
-        android:textColor="#ff717c"
+        android:textColor="@color/colorPrimary"
         android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -132,17 +132,15 @@
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/roundstyles_sign_up_edittext"
-        android:hint="28"
         android:inputType="number"
-        android:maxLines="1"
         android:paddingRight="30dp"
         android:textAlignment="viewEnd"
-        android:textColor="#ff717c"
-        android:textColorHint="#ff717c"
+        android:textColor="@color/colorPrimary"
         android:textSize="12sp"
-        app:layout_constraintLeft_toLeftOf="@id/edit_signup_pwcheck"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_signup_pwcheck"
-        app:layout_constraintWidth_percent="0.3" />
+        app:layout_constraintWidth_percent="0.7" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -164,48 +162,22 @@
         app:layout_constraintBottom_toBottomOf="@+id/edit_signup_cycle"
         app:layout_constraintTop_toTopOf="@+id/edit_signup_cycle"/>
 
-    <EditText
-        android:id="@+id/edit_signup_period"
-        android:layout_width="0dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/roundstyles_sign_up_edittext"
-        android:hint="7"
-        android:inputType="number"
-        android:maxLines="1"
-        android:paddingRight="30dp"
-        android:textAlignment="viewEnd"
-        android:textColor="#ff717c"
-        android:textColorHint="#ff717c"
-        android:textSize="12sp"
-        app:layout_constraintRight_toRightOf="@id/edit_signup_pwcheck"
-        app:layout_constraintTop_toBottomOf="@id/edit_signup_pwcheck"
-        app:layout_constraintWidth_percent="0.3" />
-
     <TextView
+        android:id="@+id/text_cycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="월경 기간"
-        android:textColor="#5c000000"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@id/edit_signup_period"
-        app:layout_constraintLeft_toLeftOf="@id/edit_signup_period"
-        app:layout_constraintTop_toTopOf="@id/edit_signup_period" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:text="일"
-        app:layout_constraintRight_toRightOf="@+id/edit_signup_period"
-        app:layout_constraintBottom_toBottomOf="@+id/edit_signup_cycle"
-        app:layout_constraintTop_toTopOf="@+id/edit_signup_cycle"/>
-
+        android:text="평균 월경주기는 25~35일 입니다."
+        android:textSize="16sp"
+        android:textColor="#606060"
+        android:layout_marginTop="36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_signup_cycle"
+        />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ff717c"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="다음"
         android:textSize="16sp"
