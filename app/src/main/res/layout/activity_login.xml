@@ -18,7 +18,7 @@
     <View
         android:id="@+id/circle"
         android:layout_width="686dp"
-        android:layout_height="246dp"
+        android:layout_height="280dp"
         android:background="@drawable/circle_login_background"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526"
+        app:layout_constraintVertical_bias="0.55"
         tools:style="@style/CardView">
 
         <android.support.constraint.ConstraintLayout
@@ -45,13 +45,14 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView_dfdf"
+                android:id="@+id/text_name_or_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="36dp"
                 android:text="Name or E-mail"
                 android:textSize="12sp"
+                android:textColor="#14000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,22 +62,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="58dp"
                 android:layout_marginStart="52dp"
-                android:layout_marginTop="5dp"
-                android:textSize="12sp"
+                android:layout_marginTop="44dp"
                 android:inputType="textEmailAddress"
+                android:textColor="#484848"
+                android:textSize="12sp"
+                android:backgroundTint="#0a000000"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_dfdf" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/text_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="31dp"
                 android:text="Password"
                 android:textSize="12sp"
+                android:textColor="#14000000"
                 app:layout_constraintStart_toEndOf="@+id/edit_signup_password"
                 app:layout_constraintStart_toStartOf="@+id/edit_signup_password"
                 app:layout_constraintTop_toBottomOf="@+id/edit_signup_id" />
@@ -87,19 +91,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="58dp"
                 android:layout_marginStart="52dp"
-                android:layout_marginTop="5dp"
-                android:textSize="12sp"
+                android:layout_marginTop="120dp"
                 android:inputType="textPassword"
+                android:textSize="12sp"
+                android:textColor="#484848"
+                android:backgroundTint="#0a000000"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_password" />
+                app:layout_constraintTop_toTopOf="parent" />
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="42dp"
         android:layout_marginEnd="86dp"
         android:layout_marginStart="84dp"
         android:background="@drawable/roundstyles_start_login_button"
@@ -107,34 +114,37 @@
         android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="@id/card_login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_login" />
+        app:layout_constraintTop_toBottomOf="@+id/card_login"
+        app:layout_constraintVertical_bias="0.166" />
 
     <ImageView
         android:id="@+id/image_icon"
         android:layout_width="84dp"
         android:layout_height="84dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginTop="43dp"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintBottom_toTopOf="@+id/text_sign_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_sign_in"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/text_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="48dp"
         android:text="Sign In"
         android:textColor="#ffff"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/card_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_icon" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -153,6 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have an account? "
+            android:textColor="#a2a2a2"
             android:textSize="12sp" />
 
         <TextView
@@ -161,6 +172,7 @@
             android:layout_height="wrap_content"
             android:text="Create Now"
             android:textSize="12sp"
+            android:textColor="#696969"
             android:textStyle="bold" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
