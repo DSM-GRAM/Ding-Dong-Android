@@ -10,4 +10,10 @@
         <item name="windowNoTitle">true</item>
         <item name="cardViewStyle">@style/CardView</item>
     </style>
+
+    <style name="DefaultNumberPickerTheme" parent="AppTheme">
+        <item name="colorControlNormal">#ff717c</item>
+        <item name="android:editTextColor">#ffffff</item>
+        <item name="android:textSize">28sp</item>
+    </style>
 </resources>

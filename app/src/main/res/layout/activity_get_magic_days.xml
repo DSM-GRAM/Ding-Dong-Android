@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff717c">
+
+    <TextView
+        android:id="@+id/text_short_magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="최근 6개월간 가장 짧은 월경기간"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/np_short_magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:theme="@style/DefaultNumberPickerTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/text_short_magic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_short_magic"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <TextView
+        android:id="@+id/text_short_magic_np_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="일"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/np_short_magic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="@+id/np_short_magic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/text_long_magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        android:text="최근 6개월간 가장 긴 월경기간"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_short_magic_np_day" />
+
+    <NumberPicker
+        android:id="@+id/np_long_magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/DefaultNumberPickerTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/text_long_magic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_long_magic"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <TextView
+        android:id="@+id/text_long_magic_np_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="일"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/np_long_magic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="@+id/np_long_magic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746" />
+
+    <TextView
+        android:id="@+id/text_last_start_magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif"
+        android:text="가장 최근 생리 시작일"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_long_magic_np_day" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_last_start_magic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_last_start_magic"
+        app:layout_constraintVertical_bias="0.206"
+        tools:ignore="MissingConstraints">
+
+        <NumberPicker
+            android:id="@+id/np_last_start_magic_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultNumberPickerTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/np_last_start_magic_month"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_last_start_magic_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="년"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/np_last_start_magic_year"
+            app:layout_constraintEnd_toEndOf="@+id/np_last_start_magic_year"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/np_last_start_magic_year"
+            app:layout_constraintTop_toTopOf="@+id/np_last_start_magic_year"
+            app:layout_constraintVertical_bias="0.525" />
+
+
+        <NumberPicker
+            android:id="@+id/np_last_start_magic_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultNumberPickerTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/np_last_start_magic_day"
+            app:layout_constraintStart_toEndOf="@+id/np_last_start_magic_year"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="64dp" />
+
+        <TextView
+            android:id="@+id/text_last_start_magic_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="월"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/np_last_start_magic_month"
+            app:layout_constraintEnd_toEndOf="@+id/np_last_start_magic_month"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/np_last_start_magic_month"
+            app:layout_constraintTop_toTopOf="@+id/np_last_start_magic_month"
+            app:layout_constraintVertical_bias="0.525" />
+
+
+        <NumberPicker
+            android:id="@+id/np_last_start_magic_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/DefaultNumberPickerTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/np_last_start_magic_month"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_last_start_magic_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="일"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/np_last_start_magic_day"
+            app:layout_constraintEnd_toEndOf="@+id/np_last_start_magic_day"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/np_last_start_magic_day"
+            app:layout_constraintTop_toTopOf="@+id/np_last_start_magic_day"
+            app:layout_constraintVertical_bias="0.525" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:text="다음"
+        android:textColor="#ff717c"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
