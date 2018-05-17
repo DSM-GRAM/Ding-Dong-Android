@@ -1,18 +1,17 @@
 package com.example.dsm2017.dingdong
 
+import android.content.Intent
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Spannable
-import android.graphics.Color.parseColor
-import android.graphics.Typeface
 import android.graphics.Typeface.BOLD
 import android.text.style.ForegroundColorSpan
 import android.text.SpannableStringBuilder
 import android.text.style.AbsoluteSizeSpan
 import android.text.style.StyleSpan
-import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_sign_up.*
+import kotlinx.android.synthetic.main.activity_start.*
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -27,6 +26,11 @@ class SignUpActivity : AppCompatActivity() {
         cycleChangeColor.setSpan(ForegroundColorSpan(Color.parseColor("#ff717c")), 9, 14, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         cycleChangeColor.setSpan(AbsoluteSizeSpan(60), 9, 14, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         cycleChangeColor.setSpan(StyleSpan(BOLD), 9, 14, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-        text_cycle.setText(cycleChangeColor);
+        text_cycle.text = cycleChangeColor
+
+        btn_next.setOnClickListener {
+            val intent =  Intent(this, GetFirstMagicDayActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
