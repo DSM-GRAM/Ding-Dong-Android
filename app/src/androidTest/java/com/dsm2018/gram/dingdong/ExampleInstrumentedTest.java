@@ -1,4 +1,4 @@
-package com.example.dsm2017.dingdong;
+package com.dsm2018.gram.dingdong;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

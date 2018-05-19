@@ -1,4 +1,4 @@
-package com.example.dsm2017.dingdong
+package com.dsm2018.gram.dingdong
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dsm2017.dingdong">
+    package="com.dsm2018.gram.dingdong">
 
     <application
         android:allowBackup="true"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
-    tools:context="com.example.dsm2017.dingdong.LoginActivity">
+    tools:context="com.dsm2018.gram.dingdong.LoginActivity">
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_login"

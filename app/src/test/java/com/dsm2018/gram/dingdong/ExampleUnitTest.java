@@ -1,4 +1,4 @@
-package com.example.dsm2017.dingdong;
+package com.dsm2018.gram.dingdong;
 
 import org.junit.Test;
 
