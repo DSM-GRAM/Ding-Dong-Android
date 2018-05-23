@@ -11,7 +11,6 @@ import android.text.SpannableStringBuilder
 import android.text.style.AbsoluteSizeSpan
 import android.text.style.StyleSpan
 import kotlinx.android.synthetic.main.activity_sign_up.*
-import kotlinx.android.synthetic.main.activity_start.*
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -29,7 +28,7 @@ class SignUpActivity : AppCompatActivity() {
         text_cycle.text = cycleChangeColor
 
         btn_next.setOnClickListener {
-            val intent =  Intent(this, GetFirstMagicDayActivity::class.java)
+            val intent =  Intent(this, GetMagicDaysActivity::class.java)
             startActivity(intent)
         }
     }

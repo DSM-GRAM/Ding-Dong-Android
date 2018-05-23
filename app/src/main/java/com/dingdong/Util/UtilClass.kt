@@ -1,4 +1,4 @@
-package com.dsm2018.gram.dingdong.Util
+package com.dingdong.Util
 
 object UtilClass{
 }

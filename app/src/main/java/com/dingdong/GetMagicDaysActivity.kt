@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_get_magic_days.*
 
-class  GetFirstMagicDayActivity : AppCompatActivity(){
+class  GetMagicDaysActivity : AppCompatActivity(){
 
     /*
     lateinit var shortM : NumberPicker
