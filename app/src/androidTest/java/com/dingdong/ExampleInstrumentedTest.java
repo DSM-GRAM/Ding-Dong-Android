@@ -1,4 +1,4 @@
-package com.dsm2018.gram.dingdong;
+package com.dingdong;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.dsm2017.dingdong", appContext.getPackageName());
+        assertEquals("com.dingdong", appContext.getPackageName());
     }
 }
