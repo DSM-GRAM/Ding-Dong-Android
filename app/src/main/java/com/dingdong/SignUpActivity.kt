@@ -1,4 +1,4 @@
-package com.dsm2018.gram.dingdong
+package com.dingdong
 
 import android.content.Intent
 import android.graphics.Color
