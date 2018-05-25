@@ -20,6 +20,7 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".GetMagicDaysActivity" />
+        <activity android:name=".SelectMagicDaysActivity"></activity>
     </application>
 
 </manifest>

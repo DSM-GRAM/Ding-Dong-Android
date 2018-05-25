@@ -1,10 +1,12 @@
 package com.dingdong
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_get_magic_days.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
-class  GetMagicDaysActivity : AppCompatActivity(){
+class GetMagicDaysActivity : AppCompatActivity() {
 
     /*
     lateinit var shortM : NumberPicker
@@ -38,5 +40,10 @@ class  GetMagicDaysActivity : AppCompatActivity(){
 
         np_last_start_magic_day.minValue = 1
         np_last_start_magic_day.maxValue = 31
+
+        btn_next_get.setOnClickListener {
+            val intent = Intent(this, SelectMagicDaysActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
