@@ -28,7 +28,7 @@ class SignUpActivity : AppCompatActivity() {
         text_cycle.text = cycleChangeColor
 
         btn_next.setOnClickListener {
-            val intent =  Intent(this, GetMagicDaysActivity::class.java)
+            val intent =  Intent(this, SelectDaysRhythmActivity::class.java)
             startActivity(intent)
         }
     }

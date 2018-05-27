@@ -3,10 +3,9 @@ package com.dingdong
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_get_magic_days.*
-import kotlinx.android.synthetic.main.activity_sign_up.*
+import kotlinx.android.synthetic.main.activity_select_days_rhythm.*
 
-class GetMagicDaysActivity : AppCompatActivity() {
+class SelectDaysRhythmActivity : AppCompatActivity() {
 
     /*
     lateinit var shortM : NumberPicker
@@ -17,7 +16,7 @@ class GetMagicDaysActivity : AppCompatActivity() {
     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_get_magic_days)
+        setContentView(R.layout.activity_select_days_rhythm)
         /*
         shortM = findViewById(R.id.np_short_magic)
         longM = findViewById(R.id.np_long_magic)
@@ -42,7 +41,7 @@ class GetMagicDaysActivity : AppCompatActivity() {
         np_last_start_magic_day.maxValue = 31
 
         btn_next_get.setOnClickListener {
-            val intent = Intent(this, SelectMagicDaysActivity::class.java)
+            val intent = Intent(this, SelectDaysStandard::class.java)
             startActivity(intent)
         }
     }

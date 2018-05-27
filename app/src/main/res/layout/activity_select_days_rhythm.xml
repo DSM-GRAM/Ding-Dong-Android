@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_short_magic"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.23" />
 
 
     <View
@@ -75,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_long_magic"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintVertical_bias="0.23" />
 
     <View
         android:layout_width="match_parent"
@@ -83,7 +83,7 @@
         android:layout_marginTop="112dp"
         android:background="#ff717c"
         app:layout_constraintEnd_toEndOf="@+id/text_long_magic"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/text_long_magic"
@@ -105,7 +105,7 @@
         app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="@+id/np_long_magic"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintVertical_bias="0.74" />
 
     <TextView
         android:id="@+id/text_long_magic"
@@ -118,7 +118,7 @@
         android:background="#ff717c"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_short_magic_np_day" />
 
@@ -132,7 +132,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_last_start_magic"
-        app:layout_constraintVertical_bias="0.206"
+        app:layout_constraintVertical_bias="0.2"
         tools:ignore="MissingConstraints">
 
         <NumberPicker
@@ -169,8 +169,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/text_last_start_magic_month"
             app:layout_constraintStart_toEndOf="@+id/text_last_start_magic_year"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_last_start_magic_month"
@@ -197,8 +196,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/np_last_start_magic_month"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/text_last_start_magic_day"
@@ -242,7 +240,6 @@
         android:textColor="#ffffff"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_long_magic_np_day" />
 
@@ -252,7 +249,7 @@
         android:layout_marginTop="372dp"
         android:background="#ff717c"
         app:layout_constraintEnd_toEndOf="@+id/text_last_start_magic"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/text_last_start_magic"

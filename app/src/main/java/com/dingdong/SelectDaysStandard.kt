@@ -3,14 +3,14 @@ package com.dingdong
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.squareup.timessquare.CalendarPickerView
-import kotlinx.android.synthetic.main.activity_select_magic_days.*
+import kotlinx.android.synthetic.main.activity_select_days_standard.*
 import java.util.*
 
-class SelectMagicDaysActivity : AppCompatActivity() {
+class SelectDaysStandard : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_select_magic_days)
+        setContentView(R.layout.activity_select_days_standard)
 
         val today: Date = Date()
         val minDate : Calendar = Calendar.getInstance()
