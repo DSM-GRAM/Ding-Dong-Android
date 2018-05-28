@@ -21,14 +21,14 @@ class SignUpActivity : AppCompatActivity() {
 
 
         val cycleString = "평균 월경주기는 25~35일 입니다."
-        val  cycleChangeColor= SpannableStringBuilder(cycleString)
+        val cycleChangeColor = SpannableStringBuilder(cycleString)
         cycleChangeColor.setSpan(ForegroundColorSpan(Color.parseColor("#ff717c")), 9, 14, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         cycleChangeColor.setSpan(AbsoluteSizeSpan(60), 9, 14, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         cycleChangeColor.setSpan(StyleSpan(BOLD), 9, 14, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         text_cycle.text = cycleChangeColor
 
         btn_next.setOnClickListener {
-            val intent =  Intent(this, SelectDaysRhythmActivity::class.java)
+            val intent = Intent(this, SelectCalculationActivity::class.java)
             startActivity(intent)
         }
     }
