@@ -20,7 +20,8 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SelectDaysRhythmActivity" />
-        <activity android:name=".SelectDaysStandard"></activity>
+        <activity android:name=".SelectDaysStandard" />
+        <activity android:name=".SelectCalculationActivity"></activity>
     </application>
 
 </manifest>
