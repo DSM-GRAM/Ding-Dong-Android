@@ -21,7 +21,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SelectDaysRhythmActivity" />
         <activity android:name=".SelectDaysStandardActivity" />
-        <activity android:name=".SelectCalculationActivity"></activity>
+        <activity android:name=".SelectCalculationActivity" />
+        <activity android:name=".SelectBeforeSymptomActivity"></activity>
     </application>
 
 </manifest>

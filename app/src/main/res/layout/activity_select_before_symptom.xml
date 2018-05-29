@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SelectBeforeSymptomActivity">
+
+    <TextView
+        android:id="@+id/text_select_before_symptom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="월경 전 증상을 모두 입력해주세요"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_mood_swing"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_angry"
+        app:layout_constraintTop_toBottomOf="@id/text_select_before_symptom"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="감정기복"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_mood_swing"
+        app:layout_constraintRight_toRightOf="@id/btn_mood_swing"
+        app:layout_constraintTop_toBottomOf="@id/btn_mood_swing" />
+
+    <ImageButton
+        android:id="@+id/btn_angry"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_mood_swing"
+        app:layout_constraintRight_toLeftOf="@id/btn_blue"
+        app:layout_constraintTop_toBottomOf="@id/text_select_before_symptom"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="화남"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_angry"
+        app:layout_constraintRight_toRightOf="@id/btn_angry"
+        app:layout_constraintTop_toBottomOf="@id/btn_angry" />
+
+    <ImageButton
+        android:id="@+id/btn_blue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_angry"
+        app:layout_constraintRight_toLeftOf="@id/btn_sad"
+        app:layout_constraintTop_toBottomOf="@id/text_select_before_symptom"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="우울"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_blue"
+        app:layout_constraintRight_toRightOf="@id/btn_blue"
+        app:layout_constraintTop_toBottomOf="@id/btn_blue" />
+
+    <ImageButton
+        android:id="@+id/btn_sad"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_blue"
+        app:layout_constraintRight_toLeftOf="@id/btn_appetite"
+        app:layout_constraintTop_toBottomOf="@id/text_select_before_symptom"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="슬픔"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_sad"
+        app:layout_constraintRight_toRightOf="@id/btn_sad"
+        app:layout_constraintTop_toBottomOf="@id/btn_sad" />
+
+
+    <ImageButton
+        android:id="@+id/btn_appetite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_sad"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_select_before_symptom"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="식욕증가"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_appetite"
+        app:layout_constraintRight_toRightOf="@id/btn_appetite"
+        app:layout_constraintTop_toBottomOf="@id/btn_appetite" />
+
+    <View
+        android:id="@+id/view1_select_before_symptom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_blue"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageButton
+        android:id="@+id/btn_secretion"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_menstrual_pain"
+        app:layout_constraintTop_toBottomOf="@id/view1_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="질 분비물"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_secretion"
+        app:layout_constraintRight_toRightOf="@id/btn_secretion"
+        app:layout_constraintTop_toBottomOf="@id/btn_secretion" />
+
+    <ImageButton
+        android:id="@+id/btn_menstrual_pain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_secretion"
+        app:layout_constraintRight_toLeftOf="@id/btn_headache"
+        app:layout_constraintTop_toBottomOf="@id/view1_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="생리통"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_menstrual_pain"
+        app:layout_constraintRight_toRightOf="@id/btn_menstrual_pain"
+        app:layout_constraintTop_toBottomOf="@id/btn_menstrual_pain" />
+
+    <ImageButton
+        android:id="@+id/btn_headache"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_menstrual_pain"
+        app:layout_constraintRight_toLeftOf="@id/btn_breast"
+        app:layout_constraintTop_toBottomOf="@id/view1_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="두통"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_headache"
+        app:layout_constraintRight_toRightOf="@id/btn_headache"
+        app:layout_constraintTop_toBottomOf="@id/btn_headache" />
+
+    <ImageButton
+        android:id="@+id/btn_breast"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_headache"
+        app:layout_constraintRight_toLeftOf="@id/btn_acne"
+        app:layout_constraintTop_toBottomOf="@id/view1_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="유방의 압통"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_breast"
+        app:layout_constraintRight_toRightOf="@id/btn_breast"
+        app:layout_constraintTop_toBottomOf="@id/btn_breast" />
+
+
+    <ImageButton
+        android:id="@+id/btn_acne"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_breast"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="여드름"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_acne"
+        app:layout_constraintRight_toRightOf="@id/btn_acne"
+        app:layout_constraintTop_toBottomOf="@id/btn_acne" />
+
+    <View
+        android:id="@+id/view2_select_before_symptom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_headache"
+        app:layout_constraintVertical_bias="0.17"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageButton
+        android:id="@+id/btn_nausea"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_fatigue"
+        app:layout_constraintTop_toBottomOf="@id/view2_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="구역질"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_nausea"
+        app:layout_constraintRight_toRightOf="@id/btn_nausea"
+        app:layout_constraintTop_toBottomOf="@id/btn_nausea" />
+
+    <ImageButton
+        android:id="@+id/btn_fatigue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_nausea"
+        app:layout_constraintRight_toLeftOf="@id/btn_increase_stomach"
+        app:layout_constraintTop_toBottomOf="@id/view2_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="피로감"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_fatigue"
+        app:layout_constraintRight_toRightOf="@id/btn_fatigue"
+        app:layout_constraintTop_toBottomOf="@id/btn_fatigue" />
+
+    <ImageButton
+        android:id="@+id/btn_increase_stomach"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_constipation"
+        app:layout_constraintRight_toLeftOf="@id/btn_fatigue"
+        app:layout_constraintTop_toBottomOf="@id/view2_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="복부 팽만감"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_increase_stomach"
+        app:layout_constraintRight_toRightOf="@id/btn_increase_stomach"
+        app:layout_constraintTop_toBottomOf="@id/btn_increase_stomach" />
+
+    <ImageButton
+        android:id="@+id/btn_constipation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_increase_stomach"
+        app:layout_constraintRight_toLeftOf="@id/btn_diarrhea"
+        app:layout_constraintTop_toBottomOf="@id/view2_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="변비"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_constipation"
+        app:layout_constraintRight_toRightOf="@id/btn_constipation"
+        app:layout_constraintTop_toBottomOf="@id/btn_constipation" />
+
+
+    <ImageButton
+        android:id="@+id/btn_diarrhea"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_constipation"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="설사"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_diarrhea"
+        app:layout_constraintRight_toRightOf="@id/btn_diarrhea"
+        app:layout_constraintTop_toBottomOf="@id/btn_diarrhea" />
+
+    <View
+        android:id="@+id/view3_select_before_symptom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_increase_stomach"
+        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageButton
+        android:id="@+id/btn_insomnia"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_change_voice"
+        app:layout_constraintTop_toBottomOf="@id/view3_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="불면증"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_insomnia"
+        app:layout_constraintRight_toRightOf="@id/btn_insomnia"
+        app:layout_constraintTop_toBottomOf="@id/btn_insomnia" />
+
+    <ImageButton
+        android:id="@+id/btn_change_voice"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_insomnia"
+        app:layout_constraintRight_toLeftOf="@id/btn_increase_desire"
+        app:layout_constraintTop_toBottomOf="@id/view3_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="목소리 변화"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_change_voice"
+        app:layout_constraintRight_toRightOf="@id/btn_change_voice"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_voice" />
+
+    <ImageButton
+        android:id="@+id/btn_increase_desire"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_increase_temparature"
+        app:layout_constraintRight_toLeftOf="@id/btn_change_voice"
+        app:layout_constraintTop_toBottomOf="@id/view3_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="성욕 증가"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_increase_desire"
+        app:layout_constraintRight_toRightOf="@id/btn_increase_desire"
+        app:layout_constraintTop_toBottomOf="@id/btn_increase_desire" />
+
+    <ImageButton
+        android:id="@+id/btn_increase_temparature"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_increase_desire"
+        app:layout_constraintRight_toLeftOf="@id/btn_sick"
+        app:layout_constraintTop_toBottomOf="@id/view3_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="체온 증가"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_increase_temparature"
+        app:layout_constraintRight_toRightOf="@id/btn_increase_temparature"
+        app:layout_constraintTop_toBottomOf="@id/btn_increase_temparature" />
+
+
+    <ImageButton
+        android:id="@+id/btn_sick"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_emoji_select_symptom"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_increase_temparature"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view3_select_before_symptom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="몸살"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@id/btn_sick"
+        app:layout_constraintRight_toRightOf="@id/btn_sick"
+        app:layout_constraintTop_toBottomOf="@id/btn_sick" />
+
+    <Button
+        android:id="@+id/btn_next_select_before_symptom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@android:color/white"
+        android:text="다음"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>
