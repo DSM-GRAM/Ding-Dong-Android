@@ -177,7 +177,7 @@
     <Button
         android:id="@+id/btn_next"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="54dp"
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="다음"

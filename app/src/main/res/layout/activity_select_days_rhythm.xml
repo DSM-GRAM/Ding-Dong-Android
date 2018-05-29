@@ -258,7 +258,7 @@
     <Button
         android:id="@+id/btn_next_get"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         android:background="#ffff"
         android:text="다음"
         android:textColor="#ff717c"

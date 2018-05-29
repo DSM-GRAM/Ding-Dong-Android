@@ -24,7 +24,7 @@
         android:id="@+id/text_sltcal_cycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="25dp"
         android:text="28"
         android:textColor="@android:color/white"
         android:textSize="32sp"
@@ -118,12 +118,12 @@
                 android:textSize="16sp"/>
 
             <TextView
-                android:layout_margin="7dp"
+                android:layout_margin="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="그 전 생리시작일을 모를 경우 사용하며 가장 긴 월경 주기, 가장 짧은 월경 주기, 가장 최근 월경 시작일을 입력받습니다.\n 완벽하게 사용할 경우의 임신률은 연간 9%입니다."
-                android:textSize="16sp"
-                android:gravity="center_vertical"/>
+                android:textSize="14sp"
+                android:gravity="top"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -151,19 +151,19 @@
             android:textSize="16sp"/>
 
         <TextView
-            android:layout_margin="7dp"
+            android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="월경 주기가 26일에서 32일사이인 여성만 사용할 수 있으며 마지막 생리일, 그 전 생리일을 알고있어야합니다.\n완벽하게 사용할 경우의 임신률은 연간 5%입니다."
-            android:textSize="16sp"
-            android:gravity="center_vertical"/>
+            android:textSize="14sp"
+            android:gravity="top"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
     <Button
         android:id="@+id/btn_next_select_caculation"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="54dp"
         android:background="@android:color/white"
         android:text="다음"
         android:textColor="@color/colorPrimary"

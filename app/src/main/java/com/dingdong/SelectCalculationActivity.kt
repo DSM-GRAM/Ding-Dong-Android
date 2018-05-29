@@ -24,5 +24,12 @@ class SelectCalculationActivity : AppCompatActivity() {
             }
 
         }
+
+        cardview_rhythm.setOnClickListener {
+            radiobtn_rhythm.isChecked=true
+        }
+        cardview_standard.setOnClickListener {
+            radiobtn_standard.isChecked=true
+        }
     }
 }
