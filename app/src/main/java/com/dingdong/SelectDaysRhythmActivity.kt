@@ -41,7 +41,7 @@ class SelectDaysRhythmActivity : AppCompatActivity() {
         np_last_start_magic_day.maxValue = 31
 
         btn_next_get.setOnClickListener {
-            val intent = Intent(this, SelectDaysStandard::class.java)
+            val intent = Intent(this, SelectDaysStandardActivity::class.java)
             startActivity(intent)
         }
     }

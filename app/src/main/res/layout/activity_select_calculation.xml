@@ -114,6 +114,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
                 android:text="리듬피임법"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16sp"/>
 
             <TextView
@@ -146,6 +147,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
             android:text="표준일피임법"
+            android:textColor="@color/colorPrimary"
             android:textSize="16sp"/>
 
         <TextView

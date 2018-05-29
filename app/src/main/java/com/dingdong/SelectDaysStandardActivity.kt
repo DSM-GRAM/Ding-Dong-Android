@@ -6,7 +6,7 @@ import com.squareup.timessquare.CalendarPickerView
 import kotlinx.android.synthetic.main.activity_select_days_standard.*
 import java.util.*
 
-class SelectDaysStandard : AppCompatActivity() {
+class SelectDaysStandardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
