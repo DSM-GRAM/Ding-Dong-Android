@@ -22,7 +22,6 @@
         <activity android:name=".SelectDaysRhythmActivity" />
         <activity android:name=".SelectDaysStandardActivity" />
         <activity android:name=".SelectCalculationActivity" />
-        <activity android:name=".SelectBeforeSymptomActivity"></activity>
+        <activity android:name=".SelectBeforeSymptomActivity" />
     </application>
-
 </manifest>

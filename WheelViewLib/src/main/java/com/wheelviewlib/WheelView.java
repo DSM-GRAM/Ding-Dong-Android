@@ -28,12 +28,12 @@ import android.os.SystemClock;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.InflateException;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewGroup;
+
 
 import com.wheelviewlib.adapter.WheelAdapter;
 import com.wheelviewlib.transformer.FadingSelectionTransformer;
@@ -1102,8 +1102,7 @@ public class WheelView extends View {
         mLastTouchAngle = mWheelBounds.angleToDegrees(x, y);
     }
 
-    private void flingWheel() { // 계산한 벡터값을 움직인후 Angle 270도이랑 가장 가까운 item이 270도가 되도록 벡터로 뒤로 움직이기
-        Log.e("flingWheel", "앞으로 돌다가 마지막에 뒤로 돌아서 item의 angle을 270도로 맟추기");
+    private void flingWheel() {
         mIsDraggingWheel = false;
 
         mVelocityTracker.computeCurrentVelocity(1);
@@ -1362,7 +1361,6 @@ public class WheelView extends View {
         CacheItem() {
             mDirty = true;
         }
-
 
         CacheItem(boolean isEmpty) {
             this();

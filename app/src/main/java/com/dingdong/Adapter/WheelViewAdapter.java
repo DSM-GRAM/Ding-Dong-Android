@@ -27,7 +27,7 @@ public class WheelViewAdapter {
         @Override
         public Drawable getDrawable(int position) {
             Drawable[] drawable = new Drawable[] {
-                    createOvalDrawable(-1),
+                    //createOvalDrawable(-1),
                     new TextDrawable(String.valueOf(position+1))
             };
             return new LayerDrawable(drawable);
