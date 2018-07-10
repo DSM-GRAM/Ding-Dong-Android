@@ -15,12 +15,12 @@ public class SwipeDisableViewPager extends ViewPager {
 
     public SwipeDisableViewPager(Context context) {
         super(context);
-        //setMyScroller();
+        setMyScroller();
     }
 
     public SwipeDisableViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
-        //setMyScroller();
+        setMyScroller();
     }
 
     @Override

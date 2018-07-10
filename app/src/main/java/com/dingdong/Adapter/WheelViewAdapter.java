@@ -33,11 +33,11 @@ public class WheelViewAdapter {
             return new LayerDrawable(drawable);
         }
 
-        private Drawable createOvalDrawable(int color) {
+        /*private Drawable createOvalDrawable(int color) {
             ShapeDrawable shapeDrawable = new ShapeDrawable(new OvalShape());
             shapeDrawable.getPaint().setColor(color);
             return shapeDrawable;
-        }
+        }*/
     }
 }
 
